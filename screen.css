@@ -47,17 +47,32 @@ table {
 	border-spacing: 0;
 }
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 /*Add custom styles below... */
 
 html{
-  padding: 0.5em;
+/*  padding: 0.5em; */
+	font: inherit;
+}
+body{
+	background-color: #567895;
+	line-height: 2;
+	font-size:18px;
 }
 h1{
   font-size: 2em;
-
-  padding-bottom: .25em;
+  padding: .25em;
+	background-color: black;
+	color: white;
+	 text-shadow: 4px 4px 5px red;
 }
-
+ol, ul {
+	list-style: hiragana;
+}
 p{
   padding-bottom: 0.5em
 }
