@@ -133,3 +133,10 @@ p{
 	padding: 0px;
 	background-size: contain;
 }
+img{
+	vertical-align: baseline;
+	width: -moz-available;
+	height: auto;
+	object-fit: contain;
+	padding-bottom: 20px;
+}
