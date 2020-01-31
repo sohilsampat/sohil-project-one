@@ -57,6 +57,25 @@ table {
 html{
 /*  padding: 0.5em; */
 	font: inherit;
+	vertical-align: baseline;
+	margin-top: 100px;
+	margin-left: 300px;
+	margin-bottom: 100px;
+	margin-right: 300px;
+/*	border-top-style: solid;
+	border-top-width: 20px;
+	border-left-width: 20px;
+	border-left-style: solid;
+	border-right-width: 20px;
+	border-right-style: solid;
+	border-bottom-width: 20px;
+	border-bottom-style: solid;
+	*/
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+	padding-top: 100px;
+	width: 1180px;
 }
 body{
 	background-color: #567895;
@@ -75,4 +94,42 @@ ol, ul {
 }
 p{
   padding-bottom: 0.5em
+}
+.titlebar-container {
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ background-color:#678098;
+ border-bottom:solid 1px #dce3e5;
+ border-top:solid 1px #dce3e5;
+ box-sizing:border-box;
+ width:100%;
+ min-height:
+}
+.titlebar-container .titlebar {
+ display:flex;
+ flex-direction:row;
+ align-items:center;
+ width:100%;
+ max-width:1352px
+ background-color: #eee;
+ text-align: center;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 900;
+}
+.titlebar-container .title {
+ flex:1 1;
+ font-size:66px;
+ font-weight:700;
+ hyphens:auto
+}
+.landscape-poster{
+/*	display: block; */
+	width: -moz-available;
+	margin: 0;
+	padding: 0px;
+	background-size: contain;
 }
