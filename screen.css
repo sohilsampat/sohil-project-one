@@ -62,7 +62,7 @@ html{
 	margin-left: 10em;
 	margin-bottom: 15em;
 	margin-right: 10em;
-	/*border-top-style: solid;
+/*border-top-style: solid;
 	border-top-width: 20px;
 	border-left-width: 20px;
 	border-left-style: solid;
@@ -75,7 +75,7 @@ html{
 	padding-bottom: 0px;
 	padding-top: 0px;
 	width: 1180px;
-	*/
+*/
 }
 body{
 	background-color: #567895;
@@ -103,8 +103,8 @@ p{
  align-items:center;
  justify-content:center;
  background-color:#678098;
- border-bottom:solid 1px #dce3e5;
- border-top:solid 1px #dce3e5;
+ /*border-bottom:solid 1px #dce3e5;
+ border-top:solid 1px #dce3e5;*/
  box-sizing:border-box;
  width:100%;
  min-height:
