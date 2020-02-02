@@ -9,7 +9,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -62,20 +62,6 @@ html{
 	margin-left: 10em;
 	margin-bottom: 15em;
 	margin-right: 10em;
-/*border-top-style: solid;
-	border-top-width: 20px;
-	border-left-width: 20px;
-	border-left-style: solid;
-	border-right-width: 20px;
-	border-right-style: solid;
-	border-bottom-width: 20px;
-	border-bottom-style: solid;
-	padding-left: 0;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	width: 1180px;
-*/
 }
 body{
 	background-color: #7dabd4;
@@ -87,7 +73,6 @@ body{
 h1{
   font-size: 25px;
   padding: .25em;
-	background-color: black;
 	color: white;
 	text-shadow: 4px 4px 5px red;
 }
@@ -99,46 +84,23 @@ p{
 }
 .titlebar-container {
  display:flex;
- flex-direction:column;
- align-items:center;
  justify-content:center;
  background-color:#678098;
- /*border-bottom:solid 1px #dce3e5;
- border-top:solid 1px #dce3e5;*/
- box-sizing:border-box;
  width:100%;
- min-height:
-}
-.titlebar-container .titlebar {
- display:flex;
- flex-direction:row;
- align-items:center;
- width:100%;
- max-width:1352px
- background-color: #eee;
- text-align: center;
- position: fixed;
  top: 0;
  left: 0;
- z-index: 900;
+ position: fixed;
+ background: black;
 }
+
 .titlebar-container .title {
- flex:1 1;
  font-size:66px;
  font-weight:700;
- hyphens:auto
 }
-.landscape-poster{
-/*	display: block; */
-	width: -moz-available;
-	margin: 0;
-	padding: 0px;
-	background-size: contain;
-}
-img{
-	vertical-align: baseline;
-	width: -moz-available;
-	height: auto;
+
+img {
+	width: 100%;
+	/* height: auto; */
 	object-fit: contain;
 	padding-bottom: 20px;
 }
