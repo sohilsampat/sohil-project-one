@@ -16,11 +16,11 @@ html{
   padding: 1.2222222222em 1.2222222222em; /* 33 / 18 = 1.8333333333em*/
   background-color: black;
   color: white;
-  /* background-image: url(bg.jpg);
-  background-size: cover;
+  background-image: url(bg.jpg);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-attachment: scroll; */
+  background-attachment: scroll;
 }
 body{
   margin: 4em 0;
