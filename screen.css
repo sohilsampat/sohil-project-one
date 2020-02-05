@@ -9,55 +9,58 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Using a Major Third modular scale:
 *  https://www.modularscale.com/?18&px&1.25
 */
-
 html{
-	font-family : Helvetica, Arial, sans-serif;
-	font-size: 1.125em; /*18px /16px  = 1.125em */
-	line-height: 1.2222222222em; /* 22px /18px = 1.2222em */
-	vertical-align: baseline;
-	margin-top: 15em;
-	margin-left: 10em;
-	margin-bottom: 15em;
-	margin-right: 10em;
-}
-p{
-  padding-bottom: 1.2222222222em;
+  font-family: "Apercu Mono", monospace;
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.2222222222em; /* 22 / 18 = 1.2222222222  */
+  padding: 1.2222222222em 1.2222222222em; /* 33 / 18 = 1.8333333333em*/
+  background-color: black;
+  color: white;
+  /* background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-attachment: scroll; */
 }
 body{
-	background-color: #7dabd4;
-	padding: 0;
-	margin: 0;
+  margin: 4em 0;
+}
+h1, h2{
+  font-family: "Klang MT";
+  font-size: 1.9531111111em; /* 35.156 / 18 = 1.9531111111 */
+  line-height: 1.2515644556em; /* 44 / 35.156 = 1.2515644556 */
+	font-weight: bold;
+	text-shadow: 0.2222222222em 0.2222222222em 0.2222222222em #B5B5FF; /* 4px 4px 4px  */
 }
 h1{
-  font-size: 1.3888888889em;
-  padding: .25em;
-	color: white;
-	text-shadow: 4px 4px 5px red;
+	padding-top: .25em;
+}
+h2{
+    /* padding: 1.2222222222em 0;/*22/18 = 1.22222 */
+}
+p,h2{
+  padding-bottom: 1.2222222222em; /*22/18 = 1.22222 */
 }
 ol, ul {
 	list-style: hiragana;
+  margin-left: 1.2222222222em;
 }
-.titlebar-container {
- display:flex;
- justify-content:center;
- background-color:#678098;
- width:100%;
- top: 0;
- left: 0;
- position: fixed;
- background: black;
+.title {
+   top: 0;
+   text-align: left; /*left aligned */
+   width: 100%; /* Allows text-align know full width */
+   position: fixed; /*keeps it locked while scrolling */
+   font-size:3.6666666667em; /* 66 / 18 = 3.6666666667 */
+   font-weight:700;
 }
-
-.titlebar-container .title {
- font-size:66px;
- font-weight:700;
-}
-
+/* The following image is not being used */
 img {
 	width: 100%;
-	/* height: auto; */
+	height: auto;
 	object-fit: contain;
-	padding-bottom: 20px;
+  border-radius: 40px;
+  /* padding-top: 4em; */
+	padding-bottom: 1.1111111111em; /* 20 / 18 = 1.1111111111 */
 }
 
 /*Show Gridlines... */
