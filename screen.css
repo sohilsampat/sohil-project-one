@@ -23,7 +23,7 @@ html{
   background-attachment: scroll;
 }
 body{
-  margin: 4em 0;
+  margin: 4em 0; /*72 / 18 = 4em*/
 }
 h1, h2{
   font-family: "Klang MT";
@@ -33,17 +33,17 @@ h1, h2{
 	text-shadow: 0.2222222222em 0.2222222222em 0.2222222222em #B5B5FF; /* 4px 4px 4px  */
 }
 h1{
-	padding-top: .25em;
+	padding-top: 0.128030303em; /* 8.45 / 66 =  0.128030303 */
 }
 h2{
-    /* padding: 1.2222222222em 0;/*22/18 = 1.22222 */
+    padding: 0.6257822278em 0; /*22/35.156  = 0.6257822278 */
 }
-p,h2{
+p{
   padding-bottom: 1.2222222222em; /*22/18 = 1.22222 */
 }
 ol, ul {
 	list-style: hiragana;
-  margin-left: 1.2222222222em;
+  margin-left: 1.2222222222em; /*22/18 = 1.22222 */
 }
 .title {
    top: 0;
@@ -51,14 +51,15 @@ ol, ul {
    width: 100%; /* Allows text-align know full width */
    position: fixed; /*keeps it locked while scrolling */
    font-size:3.6666666667em; /* 66 / 18 = 3.6666666667 */
-   font-weight:700;
 }
-/* The following image is not being used */
-img {
+
+/* The following image is not being used, but kept for future reference */
+.img {
+  display: block;
 	width: 100%;
 	height: auto;
-	object-fit: contain;
-  border-radius: 40px;
+	object-fit: contain; /* check out the different options*/
+  border-radius: 40px; /*verify whether to use px or em"
   /* padding-top: 4em; */
 	padding-bottom: 1.1111111111em; /* 20 / 18 = 1.1111111111 */
 }
